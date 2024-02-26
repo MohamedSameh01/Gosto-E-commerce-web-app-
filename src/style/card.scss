@@ -1,0 +1,16 @@
+.cards {
+  margin: auto;
+  display: grid;
+  @include grid(repeat(5, 18%), 30px);
+  justify-content: center;
+  .card {
+    @include flex(center, none, center);
+    img {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      margin-right: $md;
+      border-radius: 50%;
+    }
+  }
+}
