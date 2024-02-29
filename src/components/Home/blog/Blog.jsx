@@ -5,7 +5,7 @@ import { blog } from '../../assets/data/data'
 const Blog = () => {
   return (
       <>
-          <section className='blog'>
+          <section className='blog' id='blog'>
               <Heading title='LATEST BLOG POSTS' desc='Latest marketplace news, success stories and tutorials.' />
 
               <div className='posts'>

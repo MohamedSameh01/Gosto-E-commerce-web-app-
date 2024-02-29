@@ -5,7 +5,7 @@ import { price } from "../../assets/data/data";
 const Price = () => {
     return (
         <>
-            <section className="price">
+            <section className="price" id="plans">
                 <Heading
                     title={ "Choose the Plans" }
                     desc={

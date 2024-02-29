@@ -17,7 +17,7 @@
       .mobile-nav {
         display: block;
         @include positions(absolute, 0, none, -50px, none, none, none);
-        @include width(400px, 100vh, $light, $white, 0, 0);
+        @include width(400px, 55vh, $light, $white, 0, 0);
         padding: $large 0;
         z-index: 99999;
 
@@ -31,7 +31,9 @@
         }
       }
     }
-    .right_user,
+    // .right_user{
+    //   display: none;
+    // }
     .right_search {
       display: none;
     }
@@ -56,17 +58,38 @@
       }
     }
   }
-
+  // product Items
+  // .product_items{
+  //    @include grid(repeat(1, 1fr), 30px);
+  //   .box{
+  //     .overlay{
+  //     flex-direction: column;
+  //     position: absolute;
+  //     bottom: 0;
+  //   }
+  //   }
+  // }
   // card
   .cards {
-    @include grid(repeat(3, 1fr), 30px);
+    @include grid(repeat(2, 1fr), 30px);
+    .card {
+      display: block;
+    }
   }
   .topproduct,
   .product {
     .product_items {
-      @include grid(repeat(2, 1fr), 30px);
+      @include grid(repeat(1, 1fr), 30px);
     }
   }
+
+  
+    .product_items {
+      @include grid(repeat(1, 1fr), 30px);
+      display: none;
+    }
+  
+
   .topproduct {
     .head {
       @include flex(center, center, column);

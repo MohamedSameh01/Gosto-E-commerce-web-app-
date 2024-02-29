@@ -6,7 +6,7 @@ import { ImQuotesRight } from "react-icons/im"
 const Testimonial = () => {
     return (
         <>
-            <section className='customer'>
+            <section className='customer' id='plans'>
                 <Heading title={ "Choose the Plans" } desc={ "meet our newbies! the latest templates upload to the marketplace" } />
                 <div className='content'>
                     { customer.map((item) => {
