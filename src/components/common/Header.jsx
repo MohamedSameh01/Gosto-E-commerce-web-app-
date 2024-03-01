@@ -24,7 +24,7 @@ const Header = () => {
   const [favList, setFavList] = useState(false);
   const { cart, fav } = useSelector((state) => state);
   const dispatch = useDispatch();
-  console.log("fav", fav);
+  // console.log("fav", fav);
   window.addEventListener("scroll", () => {
     const header = document.querySelector(".header");
     header.classList.toggle("active", window.scrollY > 100);

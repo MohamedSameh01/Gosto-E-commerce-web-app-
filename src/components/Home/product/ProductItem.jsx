@@ -25,29 +25,39 @@ const ProductItem = ({ data }) => {
       <div className="product_items">
         { data.map((item) => {
           return (
-            <div className="box" key={ item.id } 
-            
+            <motion.div
+              initial={{ opacity: 0, scale: 0.1 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1.5 }}
             >
-              <div className="img">
-                <img src={ item.cover } alt="item.title" />
-                <div className="overlay">
-                  <button className="button" onClick={ () => dispatch(addItem(item)) }>
-                    <FiShoppingBag />
-                  </button>
-                  <button className="button"  onClick={()=>dispatch(addFav(item))}>
-                    <AiOutlineHeart />
-                  </button>
-                  <button className="button">
-                    <FiSearch onClick={ () => onOpenImage(item.cover) } />
-                  </button>
+              <div className="box" key={item.id}>
+                <div className="img">
+                  <img src={item.cover} alt="item.title" />
+                  <div className="overlay">
+                    <button
+                      className="button"
+                      onClick={() => dispatch(addItem(item))}
+                    >
+                      <FiShoppingBag />
+                    </button>
+                    <button
+                      className="button"
+                      onClick={() => dispatch(addFav(item))}
+                    >
+                      <AiOutlineHeart />
+                    </button>
+                    <button className="button">
+                      <FiSearch onClick={() => onOpenImage(item.cover)} />
+                    </button>
+                  </div>
+                </div>
+                <div className="details">
+                  <h3>{item.title}</h3>
+                  <h3>{item.author}</h3>
+                  <h3>{item.price} $</h3>
                 </div>
               </div>
-              <div className="details">
-                <h3>{ item.title }</h3>
-                <h3>{ item.author }</h3>
-                <h3>{ item.price } $</h3>
-              </div>
-            </div>
+            </motion.div>
           );
         }) }
       </div>
