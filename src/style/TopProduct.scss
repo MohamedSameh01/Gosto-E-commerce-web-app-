@@ -8,8 +8,13 @@
   .category {
     @extend .head;
     width: 50%;
-    button {
-      margin-left: 20px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    select{
+      cursor: pointer;
+      padding: 5px 0;
+      background-color:#e5e7eb ;
     }
   }
 }

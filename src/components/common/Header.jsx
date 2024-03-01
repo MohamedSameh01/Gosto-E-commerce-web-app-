@@ -86,7 +86,7 @@ const Header = () => {
               <div
                 className={
                   favList
-                    ? "showFav p-5 bg-white w-[400px] max-h-[300px] overflow-y-scroll absolute top-[60px] right-0 z-[999]"
+                    ? "showFav p-5 bg-white w-[30vw] max-h-[300px] overflow-y-scroll absolute top-[60px] right-0 z-[999]"
                     : "hidden"
                 }
               >
