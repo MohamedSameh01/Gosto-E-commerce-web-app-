@@ -15,7 +15,7 @@ const Card = () => {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 1.5 }}
               >
-                <div className="card" key={item.id}>
+                <div className="card" key={item.id} style={{justifyContent:"center",flexWrap:"wrap"}}>
                   <div className="left">
                     <img src={item.cover} alt={item.name} />
                   </div>

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import logo from "../assets/images/logo.svg";
 import cartimg from "../assets/images/cart.png";
 import { Link } from "react-router-dom";

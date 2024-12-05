@@ -9,7 +9,7 @@ const Product = () => {
     return (
         <>
             <section>
-                <div className='product container' id='shop'>
+                <div className='product container' id='shop' style={{margin:"auto"}}>
                     <Heading title={ "Trending Products" } desc={ "Check the hottest designs of the week. These rising stars are worth your attention." } />
 
                     <ProductItem data={data}/>
